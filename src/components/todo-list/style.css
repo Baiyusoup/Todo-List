@@ -1,0 +1,28 @@
+.todo-ui {
+  padding-left: 0;
+  margin: 0;
+}
+
+.todo-ui,
+.todo-ui li {
+  list-style:none;
+}
+
+.todo-item {
+  padding: 5px 0;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.todo-item + .todo-item {
+  margin-top: 10px;
+}
+
+.todo-item:hover {
+  background-color: #eee;
+}
+
+.active {
+  /* color: #eee; */
+  text-decoration: line-through;
+}

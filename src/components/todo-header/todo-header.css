@@ -1,0 +1,12 @@
+.todo-header {
+  height: 108px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.todo-header h2 {
+  margin: 0;
+}
+.todo-header h6 {
+  margin: 2px 0 6px 0;
+}

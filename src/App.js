@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import Navbar from './components/nav/Navbar';
+import TodoControl from './components/todo-control/TodoControl';
+import TodoHeader from './components/todo-header/TodoHeader';
+import { renderRoutes, renderLink ,routes } from './routers'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="todo">
+        <TodoHeader title="Daily UI Todo List" subTitle="Practice Design Everyday">
+          <Navbar>
+            {renderLink({ routes, Wrapper: Navbar.Item })}
+          </Navbar>
+        </TodoHeader>
+        <section className="todo-body">
+          {renderRoutes({ routes })}
+        </section>
+        <TodoControl />
+      </div>
     </div>
   );
 }

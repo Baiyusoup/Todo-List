@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  font-size: 16px;
+  /* background-color: #eee; */
+}
+
+.nav-item + .nav-item {
+  margin-left: 10px;
+}
+
+.nav-item {
+  position: relative;
+  padding: 3px 7px;
+  color: #000;
+  box-shadow: 0 0 1px 1px rgb(211, 209, 209);
+  border-radius: 3px;
+}
+.nav-item:hover {
+  background-color: #eee;
+}
+.nav-item a {
+  text-decoration: none;
+}
+.nav-item a.selected {
+  text-decoration: underline;
+}
